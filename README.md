@@ -3,6 +3,7 @@ Additional material for the paper "Unveiling the Relevance Gap: Search Snippets 
 
 # Relevance Dimensions
 
+```
 rel_dimensions_desc = {
     'Motivation': {
         'label': 'D1',
@@ -109,3 +110,4 @@ rel_dimensions_desc = {
         'Original-German': "Insgesamt betrachte ich dieses Dokument als relevant für diese Lehraufgabe."
     }
 }
+```
