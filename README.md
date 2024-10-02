@@ -111,3 +111,20 @@ rel_dimensions_desc = {
     }
 }
 ```
+
+## Sample Prompts Used
+```
+[
+  {
+    "prompt": "Sie sind Physiklehrer einer 9. oder 10. Klasse an einem Gymnasium in Hannover. Sie müssen Ihren Schülern beibringen, Prozesse über  Energieübertragungsketten darzustellen . Sie möchten mindestens zwei Beispiele finden, die Sie im Unterricht vermitteln können. Suchen Sie im Internet nach mindestens drei Beispielen und wählen Sie die besten zwei aus.\n            \nStimmen Sie den folgenden Aussagen über diese Webseite zu \n\n(screenshot attached)\n\n1-Stimme überhaupt nicht zu\n2-Stimme eher nicht zu\n3-Weder noch\n4-Stimme zu\n5-Stimme voll und ganz zu\n\nAussage: Der Herausgeber des Dokuments ist erkennbar, angesehen und vertrauenswürdig. z.B. Es wird von einem bekannten Universitätsverlag veröffentlicht; es wurde von einem führenden Experten auf dem Gebiet verfasst; es wird von angesehenen wissenschaftlichen Organisationen empfohlen; usw.\nRespond as if you were a teacher.\nRespond in json with the keys 'score' (int value from 1-5), 'explanation_english' and 'explanation_german'(short. 1 or 2 sentences max.)",
+    "response": "{\"score\": 5, \"explanation_english\": \"The document is clearly published by the teacher training program of Baden-W\\u00fcrttemberg, which is a reputable state educational institution in Germany.\", \"explanation_german\": \"Das Dokument wird eindeutig vom Lehrerfortbildungsprogramm Baden-W\\u00fcrttemberg herausgegeben, einer angesehenen staatlichen Bildungseinrichtung in Deutschland.\"}",
+    "image_path": "./images/92e9a1710015b1b3922a4b0d416702b1_processed.png"
+  },
+  {
+    "prompt": "Sie sind Physiklehrer einer 9. oder 10. Klasse an einem Gymnasium in Hannover. Sie müssen Ihren Schülern beibringen, Prozesse über  Energieübertragungsketten darzustellen . Sie möchten mindestens zwei Beispiele finden, die Sie im Unterricht vermitteln können. Suchen Sie im Internet nach mindestens drei Beispielen und wählen Sie die besten zwei aus.\n            \nStimmen Sie den folgenden Aussagen über diese Webseite zu \n\n(screenshot attached)\n\n1-Stimme überhaupt nicht zu\n2-Stimme eher nicht zu\n3-Weder noch\n4-Stimme zu\n5-Stimme voll und ganz zu\n\nAussage: Insgesamt betrachte ich dieses Dokument als relevant für den vorliegenden Informationsbedarf. z.B. Es deckt alle wichtigen Punkte des Themas ab; es ist für die Zielgruppe angemessen; es bietet nützliche Ressourcen zum Lehren oder Lernen; es entspricht den Lehrplanstandards; usw.\nRespond as if you were a teacher.\nRespond in json with the keys 'score' (int value from 1-5), 'explanation_english' and 'explanation_german'(short. 1 or 2 sentences max.)",
+    "response": "{\"score\": 4, \"explanation_english\": \"This document provides a good starting point for teaching energy transfer chains, especially with the Christmas pyramid example. However, it lacks additional examples that I would need for my class.\", \"explanation_german\": \"Dieses Dokument bietet einen guten Ausgangspunkt f\\u00fcr den Unterricht \\u00fcber Energie\\u00fcbertragungsketten, insbesondere mit dem Beispiel der Weihnachtspyramide. Es fehlen jedoch weitere Beispiele, die ich f\\u00fcr meinen Unterricht ben\\u00f6tigen w\\u00fcrde.\"}",
+    "image_path": "./images/92e9a1710015b1b3922a4b0d416702b1_processed.png"
+  }
+]
+]
+```
